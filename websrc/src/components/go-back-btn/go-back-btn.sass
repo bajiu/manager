@@ -1,0 +1,31 @@
+.gobackbtn
+    position: fixed;
+    top: 26px;
+    left: 26px;
+    width: 58px;
+    height: 58px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    border-radius: 50%;
+    &::before
+        position: absolute
+        top: 20px
+        left: 14px
+        content: ' '
+        display: flex
+        width: 24px
+        height: 5px
+        background: #ffffff
+        transform: rotate(-45deg)
+        border-radius: 30%
+    &::after
+        position: absolute;
+        top: 36px;
+        left: 14px;
+        content: ' ';
+        display: flex;
+        width: 24px;
+        height: 5px;
+        background: #ffffff;
+        transform: rotate(45deg);
+        border-radius: 30%;
